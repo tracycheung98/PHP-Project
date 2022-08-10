@@ -1,0 +1,356 @@
+[20-Jul-2022 21:42:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in /var/www/html/inc/Utility/PDOWrapper.class.php:50
+Stack trace:
+#0 /var/www/html/inc/Utility/CategoryDAO.class.php(35): PDOWrapper->query('SELECT * from c...')
+#1 /var/www/html/main.php(12): CategoryDAO::getCategories()
+#2 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 50
+[20-Jul-2022 21:42:58 UTC] PHP Fatal error:  Class 'Category' not found in /var/www/html/inc/Utility/PDOWrapper.class.php on line 95
+[20-Jul-2022 21:44:19 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type Category as array in /var/www/html/inc/Entity/MainPage.class.php:60
+Stack trace:
+#0 /var/www/html/main.php(13): MainPage::showNav(Array)
+#1 {main}
+  thrown in /var/www/html/inc/Entity/MainPage.class.php on line 60
+[20-Jul-2022 21:59:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function auth() in /var/www/html/inc/Entity/MainPage.class.php:49
+Stack trace:
+#0 /var/www/html/main.php(13): MainPage::showLogin()
+#1 {main}
+  thrown in /var/www/html/inc/Entity/MainPage.class.php on line 49
+[21-Jul-2022 06:56:06 UTC] PHP Fatal error:  Uncaught Error: Class 'ProductDAO' not found in /var/www/html/main.php:20
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/main.php on line 20
+[21-Jul-2022 06:56:48 UTC] PHP Fatal error:  Cannot declare class Category, because the name is already in use in /var/www/html/inc/Entity/Category.class.php on line 3
+[21-Jul-2022 06:57:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /var/www/html/inc/Utility/ProductDAO.class.php:55
+Stack trace:
+#0 /var/www/html/main.php(22): ProductDAO::getProducts()
+#1 {main}
+  thrown in /var/www/html/inc/Utility/ProductDAO.class.php on line 55
+[21-Jul-2022 06:58:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /var/www/html/inc/Utility/ProductDAO.class.php:55
+Stack trace:
+#0 /var/www/html/main.php(22): ProductDAO::getProducts()
+#1 {main}
+  thrown in /var/www/html/inc/Utility/ProductDAO.class.php on line 55
+[21-Jul-2022 07:05:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /var/www/html/inc/Utility/ProductDAO.class.php:55
+Stack trace:
+#0 /var/www/html/main.php(22): ProductDAO::getProducts()
+#1 {main}
+  thrown in /var/www/html/inc/Utility/ProductDAO.class.php on line 55
+[21-Jul-2022 07:06:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /var/www/html/inc/Utility/ProductDAO.class.php:55
+Stack trace:
+#0 /var/www/html/main.php(22): ProductDAO::getProducts()
+#1 {main}
+  thrown in /var/www/html/inc/Utility/ProductDAO.class.php on line 55
+[21-Jul-2022 07:06:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /var/www/html/inc/Utility/ProductDAO.class.php:55
+Stack trace:
+#0 /var/www/html/main.php(22): ProductDAO::getProducts()
+#1 {main}
+  thrown in /var/www/html/inc/Utility/ProductDAO.class.php on line 55
+[21-Jul-2022 07:13:44 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to ProductDAO::getProductsByCatId() must be of the type string, null given, called in /var/www/html/main.php on line 20 and defined in /var/www/html/inc/Utility/ProductDAO.class.php:33
+Stack trace:
+#0 /var/www/html/main.php(20): ProductDAO::getProductsByCatId(NULL)
+#1 {main}
+  thrown in /var/www/html/inc/Utility/ProductDAO.class.php on line 33
+[21-Jul-2022 07:14:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(22): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:14:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(22): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:15:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:16:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:17:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:19:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:19:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:19:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:21:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:21:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:22:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName('2')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:23:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName(2)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:24:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(23): CategoryDAO::getCategoryName(2)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:25:29 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to MainPage::showProductList() must be of the type string, null given, called in /var/www/html/main.php on line 24 and defined in /var/www/html/inc/Entity/MainPage.class.php:116
+Stack trace:
+#0 /var/www/html/main.php(24): MainPage::showProductList(NULL, Array)
+#1 {main}
+  thrown in /var/www/html/inc/Entity/MainPage.class.php on line 116
+[21-Jul-2022 07:32:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(22): CategoryDAO::getCategoryName(3)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:34:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(22): CategoryDAO::getCategoryName(3)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:36:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(19): CategoryDAO::getCategoryName(3)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:36:03 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CategoryDAO::getCategoryName() must be of the type integer, null given, called in /var/www/html/main.php on line 19 and defined in /var/www/html/inc/Utility/CategoryDAO.class.php:44
+Stack trace:
+#0 /var/www/html/main.php(19): CategoryDAO::getCategoryName(NULL)
+#1 {main}
+  thrown in /var/www/html/inc/Utility/CategoryDAO.class.php on line 44
+[21-Jul-2022 07:36:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(19): CategoryDAO::getCategoryName(2)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:36:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(19): CategoryDAO::getCategoryName(1)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:36:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(19): CategoryDAO::getCategoryName(1)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:36:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(19): CategoryDAO::getCategoryName(2)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:36:10 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CategoryDAO::getCategoryName() must be of the type integer, null given, called in /var/www/html/main.php on line 19 and defined in /var/www/html/inc/Utility/CategoryDAO.class.php:44
+Stack trace:
+#0 /var/www/html/main.php(19): CategoryDAO::getCategoryName(NULL)
+#1 {main}
+  thrown in /var/www/html/inc/Utility/CategoryDAO.class.php on line 44
+[21-Jul-2022 07:36:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(55): PDOWrapper->execute()
+#2 /var/www/html/main.php(19): CategoryDAO::getCategoryName(1)
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[21-Jul-2022 07:41:05 UTC] PHP Recoverable fatal error:  Object of class Category could not be converted to string in /var/www/html/main.php on line 20
+[21-Jul-2022 08:03:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /var/www/html/inc/Utility/LoginManager.class.php on line 12
+[21-Jul-2022 08:03:08 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/inc/Utility/LoginManager.class.php on line 23
+[21-Jul-2022 08:03:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/MainPage.class.php:11) in /var/www/html/inc/Utility/LoginManager.class.php on line 25
+[21-Jul-2022 08:07:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /var/www/html/inc/Utility/LoginManager.class.php on line 12
+[21-Jul-2022 08:07:43 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/inc/Utility/LoginManager.class.php on line 23
+[21-Jul-2022 08:07:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/MainPage.class.php:11) in /var/www/html/inc/Utility/LoginManager.class.php on line 25
+[21-Jul-2022 08:14:00 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /var/www/html/inc/Utility/LoginManager.class.php on line 12
+[21-Jul-2022 08:14:00 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/inc/Utility/LoginManager.class.php on line 23
+[21-Jul-2022 08:19:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/MainPage.class.php:11) in /var/www/html/main.php on line 28
+[22-Jul-2022 17:44:00 UTC] PHP Fatal error:  Uncaught Error: Class 'MainPage' not found in /var/www/html/login.php:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/login.php on line 9
+[22-Jul-2022 18:24:41 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to UserDAO::getUser() must be of the type string, null given, called in /var/www/html/login.php on line 16 and defined in /var/www/html/inc/Utility/UserDAO.class.php:36
+Stack trace:
+#0 /var/www/html/login.php(16): UserDAO::getUser(NULL)
+#1 {main}
+  thrown in /var/www/html/inc/Utility/UserDAO.class.php on line 36
+[22-Jul-2022 18:25:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Project.user' doesn't exist in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/UserDAO.class.php(46): PDOWrapper->execute()
+#2 /var/www/html/login.php(18): UserDAO::getUser('cwt122398@gmail...')
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[23-Jul-2022 17:57:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /var/www/html/login.php on line 23
+[23-Jul-2022 17:57:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/LoginPage.class.php:9) in /var/www/html/login.php on line 28
+[23-Jul-2022 17:58:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/LoginPage.class.php:9) in /var/www/html/login.php on line 29
+[23-Jul-2022 17:59:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/LoginPage.class.php:9) in /var/www/html/login.php on line 29
+[23-Jul-2022 17:59:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/LoginPage.class.php:9) in /var/www/html/login.php on line 30
+[23-Jul-2022 17:59:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/LoginPage.class.php:9) in /var/www/html/login.php on line 30
+[23-Jul-2022 18:11:57 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: LoginPage::$notification in /var/www/html/login.php:37
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/login.php on line 37
+[23-Jul-2022 18:19:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/MainPage.class.php:11) in /var/www/html/main.php on line 23
+[23-Jul-2022 18:26:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE email='admin@gmail.com'' at line 3 in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/UserDAO.class.php(64): PDOWrapper->execute()
+#2 /var/www/html/login.php(63): UserDAO::updateUserPassword(Object(User))
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[23-Jul-2022 19:00:46 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MainPage::showProductDetail(), 0 passed in /var/www/html/product.php on line 45 and exactly 2 expected in /var/www/html/inc/Entity/MainPage.class.php:144
+Stack trace:
+#0 /var/www/html/product.php(45): MainPage::showProductDetail()
+#1 {main}
+  thrown in /var/www/html/inc/Entity/MainPage.class.php on line 144
+[23-Jul-2022 20:03:31 UTC] PHP Fatal error:  Uncaught Error: Class 'AdminPage' not found in /var/www/html/admin.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin.php on line 11
+[23-Jul-2022 20:03:53 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: AdminPage::$studentID in /var/www/html/admin.php:12
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/admin.php on line 12
+[23-Jul-2022 20:36:28 UTC] PHP Fatal error:  Class 'User' not found in /var/www/html/inc/Utility/PDOWrapper.class.php on line 95
+[23-Jul-2022 22:08:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/inc/Entity/AdminPage.class.php:9) in /var/www/html/admin.php on line 59
+[23-Jul-2022 22:41:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/admin.php:36) in /var/www/html/admin.php on line 38
+[23-Jul-2022 22:43:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/admin.php:36) in /var/www/html/admin.php on line 38
+[23-Jul-2022 22:44:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/admin.php:36) in /var/www/html/admin.php on line 38
+[23-Jul-2022 22:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/admin.php:31) in /var/www/html/admin.php on line 33
+[23-Jul-2022 22:47:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/admin.php:31) in /var/www/html/admin.php on line 33
+[24-Jul-2022 05:56:21 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CategoryDAO::createCategory() must be of the type string, object given, called in /var/www/html/admin.php on line 52 and defined in /var/www/html/inc/Utility/CategoryDAO.class.php:13
+Stack trace:
+#0 /var/www/html/admin.php(52): CategoryDAO::createCategory(Object(Category))
+#1 {main}
+  thrown in /var/www/html/inc/Utility/CategoryDAO.class.php on line 13
+[24-Jul-2022 06:21:01 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CategoryDAO::getCategoryByName() must be of the type string, null given, called in /var/www/html/admin.php on line 57 and defined in /var/www/html/inc/Utility/CategoryDAO.class.php:63
+Stack trace:
+#0 /var/www/html/admin.php(57): CategoryDAO::getCategoryByName(NULL)
+#1 {main}
+  thrown in /var/www/html/inc/Utility/CategoryDAO.class.php on line 63
+[24-Jul-2022 06:21:51 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Category::setName() must be of the type string, null given, called in /var/www/html/admin.php on line 64 and defined in /var/www/html/inc/Entity/Category.class.php:14
+Stack trace:
+#0 /var/www/html/admin.php(64): Category->setName(NULL)
+#1 {main}
+  thrown in /var/www/html/inc/Entity/Category.class.php on line 14
+[24-Jul-2022 06:22:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE cat_id='5'' at line 3 in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/CategoryDAO.class.php(96): PDOWrapper->execute()
+#2 /var/www/html/admin.php(65): CategoryDAO::updateCategory(Object(Category))
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[24-Jul-2022 06:58:57 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to ProductDAO::getProductsByName() must be of the type string, null given, called in /var/www/html/admin.php on line 93 and defined in /var/www/html/inc/Utility/ProductDAO.class.php:50
+Stack trace:
+#0 /var/www/html/admin.php(93): ProductDAO::getProductsByName(NULL)
+#1 {main}
+  thrown in /var/www/html/inc/Utility/ProductDAO.class.php on line 50
+[24-Jul-2022 07:00:16 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /var/www/html/admin.php on line 101
+[24-Jul-2022 07:01:13 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /var/www/html/admin.php on line 101
+[24-Jul-2022 07:01:43 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /var/www/html/admin.php on line 101
+[24-Jul-2022 07:09:29 UTC] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /var/www/html/admin.php on line 120
+[24-Jul-2022 07:09:29 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpR5We3W' to 'images/.' in /var/www/html/admin.php on line 120
+[24-Jul-2022 07:11:39 UTC] PHP Warning:  move_uploaded_file() expects exactly 2 parameters, 1 given in /var/www/html/admin.php on line 122
+[24-Jul-2022 07:12:29 UTC] PHP Warning:  move_uploaded_file() expects exactly 2 parameters, 1 given in /var/www/html/admin.php on line 122
+[24-Jul-2022 07:12:44 UTC] PHP Warning:  move_uploaded_file() expects exactly 2 parameters, 1 given in /var/www/html/admin.php on line 122
+[24-Jul-2022 07:13:04 UTC] PHP Warning:  move_uploaded_file() expects exactly 2 parameters, 1 given in /var/www/html/admin.php on line 122
+[24-Jul-2022 07:13:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/ProductDAO.class.php(27): PDOWrapper->execute()
+#2 /var/www/html/admin.php(128): ProductDAO::createProduct(Object(Product))
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[24-Jul-2022 07:14:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `Project`.`products`.`p_price` at row 1 in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/ProductDAO.class.php(27): PDOWrapper->execute()
+#2 /var/www/html/admin.php(128): ProductDAO::createProduct(Object(Product))
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[24-Jul-2022 07:16:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `Project`.`products`.`p_price` at row 1 in /var/www/html/inc/Utility/PDOWrapper.class.php:77
+Stack trace:
+#0 /var/www/html/inc/Utility/PDOWrapper.class.php(77): PDOStatement->execute()
+#1 /var/www/html/inc/Utility/ProductDAO.class.php(27): PDOWrapper->execute()
+#2 /var/www/html/admin.php(128): ProductDAO::createProduct(Object(Product))
+#3 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 77
+[24-Jul-2022 07:25:24 UTC] PHP Recoverable fatal error:  Object of class Product could not be converted to string in /var/www/html/admin.php on line 127
+[24-Jul-2022 08:15:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/inc/Entity/AdminPage.class.php on line 305
+[26-Jul-2022 21:00:12 UTC] PHP Recoverable fatal error:  Object of class Product could not be converted to string in /var/www/html/inc/Entity/MainPage.class.php on line 156
+[27-Jul-2022 00:20:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function encodeURIComponent() in /var/www/html/inc/Entity/MainPage.class.php:156
+Stack trace:
+#0 /var/www/html/main.php(54): MainPage::showProductList('', Array)
+#1 {main}
+  thrown in /var/www/html/inc/Entity/MainPage.class.php on line 156
+[30-Jul-2022 06:46:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /var/www/html/inc/Utility/LoginManager.class.php on line 12
+[30-Jul-2022 06:46:09 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/inc/Utility/LoginManager.class.php on line 23
+[30-Jul-2022 06:46:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on string in /var/www/html/inc/Utility/PDOWrapper.class.php:50
+Stack trace:
+#0 /var/www/html/inc/Utility/CategoryDAO.class.php(35): PDOWrapper->query('SELECT * from c...')
+#1 /var/www/html/10.php(38): CategoryDAO::getCategories()
+#2 {main}
+  thrown in /var/www/html/inc/Utility/PDOWrapper.class.php on line 50
+[01-Aug-2022 02:57:07 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to AdminPage::showDeleteProductFrom() must be of the type array, null given, called in /var/www/html/admin_10.php on line 225 and defined in /var/www/html/inc/Entity/AdminPage.class.php:229
+Stack trace:
+#0 /var/www/html/admin_10.php(225): AdminPage::showDeleteProductFrom(NULL)
+#1 {main}
+  thrown in /var/www/html/inc/Entity/AdminPage.class.php on line 229

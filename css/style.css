@@ -1,0 +1,154 @@
+html, body{
+    height: 100%;
+}
+
+.title{
+    padding-top: 10px; 
+}
+
+.product-card {
+    width: 200px;
+    margin: 15px 5px;
+}
+
+.product-card img{
+    width: auto;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product-info img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.shopping-list .collapse{
+    display: block;
+    width: 200px;
+    text-align: center;
+    background-color: #B0E0E6;
+}
+
+.shopping-list:hover .collapse{
+    display: none;
+}
+
+.shopping-list .expand{
+    display: none;
+}
+
+.shopping-list:hover .expand{
+    display: block;
+    /* position: absolute; */
+    width: 300px;
+    background-color: #B0E0E6;
+}
+
+.shopping-list:hover{
+    /* position: absolute; */
+    z-index: 10;
+}
+
+.shopping-list input{
+    width: 80px;
+}
+
+.shopping-list button a{
+    color: white;
+}
+
+.table{
+    background-color: white;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: min(200px, 25%) 1fr;
+    grid-template-rows: auto 50px 1fr auto;
+    min-height: 100%;
+}
+
+nav{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    padding-top: 15px;
+    background-color: whitesmoke;
+}
+
+header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 10px; 
+    font-family: Impact, fantasy;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: #a7ddffa8;
+}
+
+.user{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 10px; 
+    /* font-family: Impact, fantasy; */
+    /* letter-spacing: 5px; */
+    text-align: left;
+    background-color: #a7ddffd8;
+}
+
+header img{
+    display: inline;
+    width: auto;
+    height: 50px;
+    border: 10px solid white;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.shopping-list{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 15px 30px;
+    justify-self: end;
+}
+
+main{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 30px;
+}
+
+footer{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    text-align: center;
+    word-spacing: 100px;
+    background-color: #a7ddffa8;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    padding: 0;
+}
+
+.paypal img{
+    width: 500px;
+    height: auto;
+    border: 50px solid white;
+    object-fit: contain;
+}
+
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
